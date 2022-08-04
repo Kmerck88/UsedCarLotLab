@@ -1,6 +1,6 @@
-<<<<<<< HEAD
-﻿
-=======
+
+
+
 ﻿//USED CAR LOT
 //Objectives: Collections, Objects, Inheritance
 
@@ -61,4 +61,3 @@
 //View all cars of an entered price or less.
 //View only used cars or view only new cars.
 
->>>>>>> 299dbfcab92a7a6b5bd4659a61022fbd5d166441

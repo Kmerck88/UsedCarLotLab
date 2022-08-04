@@ -29,14 +29,10 @@ namespace UsedCarLotLab
         }
         public override string ToString()
         {
-<<<<<<< HEAD
-            return $"{Make} {Model} {Year} {Price}";
-        }
-        
-=======
             return $"Make: {Make} Model: {Model} Year: {Year} Price: {Price}"; //format ex: $"{make, -10}
         }
->>>>>>> 299dbfcab92a7a6b5bd4659a61022fbd5d166441
+    
+        }
+
     }
 
-}
