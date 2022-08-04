@@ -10,6 +10,11 @@ namespace UsedCarLotLab
             Mileage = mileage;
         }
         public double Mileage { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Make, -10} {Model, -12} {Year, -6} ${Price, 8} {Mileage, 6} miles (Used)"; //format ex: $"{make, -10}
+        }
     }
 }
 
