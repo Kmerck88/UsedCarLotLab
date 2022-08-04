@@ -13,7 +13,7 @@ namespace UsedCarLotLab
 
         public override string ToString()
         {
-            return $"{Make, -10} {Model, -12} {Year, -6} ${Price, 8} {Mileage, 6} miles (Used)"; //format ex: $"{make, -10}
+            return $"{Make, -14} {Model, -12} {Year, -6} ${Price, 8} {Mileage, 6} miles (Used)"; //format ex: $"{make, -10}
         }
     }
 }

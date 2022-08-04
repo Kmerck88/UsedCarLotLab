@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-﻿using UsedCarLotLab;
-=======
-
-
-
-﻿//USED CAR LOT
-//Objectives: Collections, Objects, Inheritance
->>>>>>> f16ed9d52d69a0160cffea40899dd1ed650322c7
+using UsedCarLotLab;
 
 
 //List of Cars
@@ -20,7 +12,12 @@ List<Car> Inventory = new List<Car>()
     new UsedCar("Lincoln", "Navigator", 2017, 67000.01m, 45896),
     };
 
+//Instantiate/create new object of CarLot
 CarLot cars = new CarLot(Inventory);
+
+//List Inventory
 cars.ListCars();
+Console.WriteLine($"{Inventory.Count + 1}. Sell a car");
+Console.WriteLine($"{Inventory.Count + 2}. Quit");
 
 
