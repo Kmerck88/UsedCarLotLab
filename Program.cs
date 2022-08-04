@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 ﻿using UsedCarLotLab;
+=======
+
+
+
+﻿//USED CAR LOT
+//Objectives: Collections, Objects, Inheritance
+>>>>>>> f16ed9d52d69a0160cffea40899dd1ed650322c7
 
 
 //List of Cars

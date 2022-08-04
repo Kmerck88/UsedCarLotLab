@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UsedCarLotLab
 {
-   public class Car
+    public class Car
     {
         public string Make { get; set; }
         public string Model { get; set; }
@@ -25,12 +25,14 @@ namespace UsedCarLotLab
             Make = make;
             Model = model;
             Year = year;
-            Price = price; 
+            Price = price;
         }
         public override string ToString()
         {
             return $"{Make,-10} {Model,-12} {Year,-6} ${Price,8}";
         }
+    
+        }
+
     }
 
-}
