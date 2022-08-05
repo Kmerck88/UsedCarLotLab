@@ -24,7 +24,7 @@ namespace UsedCarLotLab
     //Method to remove car
     public void SellCar(int index)
         {
-            VehicleLot.RemoveAt(index);
+            VehicleLot.RemoveAt(index-1);
         }
     }
 }

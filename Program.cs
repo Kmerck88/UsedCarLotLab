@@ -1,11 +1,5 @@
 using UsedCarLotLab;
-
-
-
-Console.WriteLine("Welcome to the Used Car Lot!");
-
-
-
+Console.WriteLine("Welcome to the Used Car Lot!\n");
 
 //List of Cars
 List<Car> Inventory = new List<Car>()
@@ -17,49 +11,61 @@ List<Car> Inventory = new List<Car>()
     new UsedCar("Ford", "Explorer", 2018, 32000.99m, 25342),
     new UsedCar("Lincoln", "Navigator", 2017, 67000.01m, 45896),
     };
-
     
 //Instantiate/create new object of CarLot
 CarLot cars = new CarLot(Inventory);
 
-//List Inventory
-cars.ListCars();
-Console.WriteLine($"{Inventory.Count + 1}. Sell a car");
-Console.WriteLine($"{Inventory.Count + 2}. Quit");
-
-Console.WriteLine("Please enter an option");
-
-int userIput = int.Parse(Console.ReadLine()); 
-
-if(userIput == Inventory.Count + 1)
+//Program loop
+bool runProgram = true;
+while (runProgram)
 {
-    Console.WriteLine("Please enter the Make, Model, Year, Price, Milage separated by spaces. ");
-    string[] sellerLot = Console.ReadLine().ToLower().Split(" ");
+    //List Inventory
+    cars.ListCars();
+    Console.WriteLine($"{Inventory.Count + 1}. Sell a car");
+    Console.WriteLine($"{Inventory.Count + 2}. Quit");
+    while (true)
     {
-        string make = sellerLot[0];
-        string model = sellerLot[1];
-        int year = int.Parse(sellerLot[2]);
-        decimal price = decimal.Parse(sellerLot[3]);
-        double mileage = double.Parse(sellerLot[4]);
-        Car car = new UsedCar(make, model, year, price, mileage);
-        cars.BuyCar(car);
-        cars.ListCars(); 
-        
-        else if (userIput == Inventory.Count + 2) 
+        //Get user input
+        Console.Write("\nPlease enter an option to buy a car, sell a car, or quit: ");
+        int userIput = int.Parse(Console.ReadLine());
+
+        //If user chooses sell a car option
+        if (userIput == Inventory.Count + 1)
         {
+            Console.WriteLine("\nPlease enter the Make, Model, Year, Price, Milage separated by spaces. ");
+            string[] sellerLot = Console.ReadLine().ToLower().Split(" ");
+
+            string make = sellerLot[0];
+            string model = sellerLot[1];
+            int year = int.Parse(sellerLot[2]);
+            decimal price = decimal.Parse(sellerLot[3]);
+            double mileage = double.Parse(sellerLot[4]);
+
+            Car car = new UsedCar(make, model, year, price, mileage);
+            cars.BuyCar(car);
+            cars.ListCars();
             
-            // TODO: While loop 
-            
-}
+            break;
+
+        }
+        //If user chooses to quit
+        else if (userIput == Inventory.Count + 2)
+        {
+            runProgram = false;
+            break;
+        }
         else
         {
             cars.SellCar(userIput);
             cars.ListCars();
+            Console.WriteLine();
+            break;
         }
-
-    }
-
+        
+     }
+    runProgram = Validator.Validator.GetContinue();
 }
+
 
 
 

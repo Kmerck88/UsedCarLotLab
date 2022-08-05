@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Grand_Circus\\UsedCarLotLab\\UsedCarLotLab\\UsedCarLotLab.csproj": {}
+    "/Users/tolubunmi/Projects/After Hours Bootcamp/Collaborations/UsedCarLotLab/UsedCarLotLab.csproj": {}
   },
   "projects": {
-    "C:\\Grand_Circus\\UsedCarLotLab\\UsedCarLotLab\\UsedCarLotLab.csproj": {
+    "/Users/tolubunmi/Projects/After Hours Bootcamp/Collaborations/UsedCarLotLab/UsedCarLotLab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Grand_Circus\\UsedCarLotLab\\UsedCarLotLab\\UsedCarLotLab.csproj",
+        "projectUniqueName": "/Users/tolubunmi/Projects/After Hours Bootcamp/Collaborations/UsedCarLotLab/UsedCarLotLab.csproj",
         "projectName": "UsedCarLotLab",
-        "projectPath": "C:\\Grand_Circus\\UsedCarLotLab\\UsedCarLotLab\\UsedCarLotLab.csproj",
-        "packagesPath": "C:\\Users\\kmerc\\.nuget\\packages\\",
-        "outputPath": "C:\\Grand_Circus\\UsedCarLotLab\\UsedCarLotLab\\obj\\",
+        "projectPath": "/Users/tolubunmi/Projects/After Hours Bootcamp/Collaborations/UsedCarLotLab/UsedCarLotLab.csproj",
+        "packagesPath": "/Users/tolubunmi/.nuget/packages/",
+        "outputPath": "/Users/tolubunmi/Projects/After Hours Bootcamp/Collaborations/UsedCarLotLab/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kmerc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/tolubunmi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -44,8 +43,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -54,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400-preview.22330.6\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }
