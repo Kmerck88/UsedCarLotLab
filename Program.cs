@@ -33,7 +33,7 @@ while (runProgram)
         if (userIput == Inventory.Count + 1)
         {
             Console.WriteLine("\nPlease enter the Make, Model, Year, Price, Milage separated by spaces. ");
-            string[] sellerLot = Console.ReadLine().ToLower().Split(" ");
+            string[] sellerLot = Console.ReadLine().TSplit(" ");
 
             string make = sellerLot[0];
             string model = sellerLot[1];
